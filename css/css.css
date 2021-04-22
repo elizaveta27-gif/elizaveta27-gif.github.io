@@ -1,0 +1,239 @@
+*{
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+/* menu */
+header {
+    position: relative;
+    height: 50px;
+}
+
+nav{
+    position: fixed;
+    height: 50px;
+    background-color: #212121;
+    z-index: 2;
+    width: 100%;
+    
+}   
+
+header  nav{
+    padding: 13px 70px;
+    margin: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    
+}
+
+.menu .menu_link{
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+.menu .menu_item{
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+
+.subheader{
+    position: absolute;
+    width: 100%;
+    height: 87px;
+    background: rgba(0,0,0,0.6);
+    margin-top: 50px;
+    
+}
+
+.subheader .subheader_logo{
+    display: block;
+    min-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader_offical{
+    font-weight: 300;
+    font-size: 13px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: 6px;
+    
+}
+
+
+.subheader .subheder_call{
+    text-align: center;
+    margin-top: 19px;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+    color: #FFFFFF;
+
+}
+
+.subheader .subheader_phone{
+    text-align: center;
+    display: block;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+.subheader .subheader_btn{
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px; 
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    margin-top:19px;
+
+}
+
+/* menu */
+
+/* promo */
+
+.promo{
+    min-height: 800px;
+    background:url('../img/twoSection/uber_bg.png') center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+
+}
+
+.promo .promo_header, .promo .promo_subheader{
+    font-size: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin: 0;
+
+}
+.promo .promo_subheader{
+    font-size: 35px;
+    line-height: 36px;
+    margin-top: 22px;
+   
+}
+
+.promo .promo_descr{
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 24px;
+    margin-top: 23px;
+}
+
+.promo .promo_btn{
+    display: block; 
+    margin: 118px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+
+}
+
+
+/* conditions */
+
+.conditions{
+    padding: 71px 0 65px 0;
+}
+
+.conditions .conditions_header{
+
+    font-weight: 900;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+    margin-top: 38px;
+}
+
+.conditions .advantages{
+    margin: 0 auto;
+    height: 24px;
+    width: 112px;
+    padding: 5px 12px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;  
+}
+
+
+.conditions .conditions_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+   
+   
+}
+
+.conditions .conditions_text .conditions_subheader{
+    font-size: 17px;
+    color: #1EACC7;
+
+}
+
+.conditions .conditions_wrapper .contidions_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+    
+   
+}
+
+.conditions .conditions_wrapper .contidions_icon img{
+    display: block;
+    margin: 0 auto;
+   
+
+}
+
+.conditions .conditions_wrapper .conditions_text{
+    width: 343px;
+
+}
+.conditions .conditions_wrapper .conditions_descr{
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.conditions .conditions_wrapper .conditions_subheader{
+    line-height: 21px;
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;       
+}

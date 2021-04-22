@@ -1,0 +1,1036 @@
+@charset "UTF-8";
+/* line 2, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+/* line 10, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+body {
+  margin: 0;
+}
+
+@media (max-width: 1200p) {
+  /* line 3, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .menux .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .menux .menu_item .menu_link {
+    font-size: 12px;
+  }
+  /* line 8, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .promo .promo_header {
+    font-size: 30px;
+  }
+  /* line 12, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .reasons .reasons_block {
+    align-items: flex-start;
+  }
+  /* line 14, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .reasons .reasons_descr {
+    width: 250px;
+  }
+  /* line 16, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .xs-visable {
+    display: none;
+  }
+}
+
+/* line 20, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+.humburger {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  /* line 23, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .menu {
+    justify-content: center;
+  }
+  /* line 25, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .menu .menu_item {
+    padding-right: 8px;
+  }
+  /* line 27, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .menu .menu_link {
+    font-size: 11px;
+    padding-left: 10px;
+  }
+  /* line 32, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader .subheader_logo img {
+    width: 100%;
+  }
+  /* line 34, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader .subheader_offical {
+    font-size: 11px;
+  }
+  /* line 36, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader .subheader_phone {
+    font-size: 19px;
+  }
+  /* line 38, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader .subheader_btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 21px;
+  }
+  /* line 43, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader .xs-visable {
+    display: none;
+  }
+  /* line 46, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .promo .promo_header {
+    font-size: 40px;
+  }
+  /* line 48, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .promo .promo_subheader {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  /* line 53, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .reasons .reasons_block {
+    align-items: center;
+    flex-direction: column;
+  }
+  /* line 57, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .reasons .reasons_descr {
+    margin-top: 20px;
+    width: 250px;
+  }
+  /* line 61, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .reasons .reasons_round {
+    margin-right: 0;
+  }
+  /* line 64, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .mobile {
+    min-height: 500px;
+    padding-bottom: 48px;
+  }
+  /* line 67, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .mobile .mobile_item {
+    width: 250px;
+    height: 210px;
+  }
+  /* line 70, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .mobile .mobile_item .mobile_item_subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 74, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .menu {
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  /* line 86, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 88, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .menu .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0px;
+  }
+  /* line 92, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .menu .menu_item .menu_link {
+    font-size: 20px;
+  }
+  /* line 94, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 102, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 2.5px;
+    transition: 0.5s all;
+  }
+  /* line 110, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .hamburger_active span {
+    margin: -2px;
+  }
+  /* line 112, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 114, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 116, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 120, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader .xs-visable {
+    display: block;
+    text-align: center;
+    display: block;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: right;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 24px;
+  }
+  /* line 130, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader .xs-hidden {
+    display: none;
+  }
+  /* line 133, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+  /* line 141, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 8px;
+  }
+  /* line 149, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .promo .promo_header {
+    line-height: 45px;
+  }
+  /* line 152, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .review {
+    background: #070716;
+    min-height: 393px;
+  }
+  /* line 155, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .review .review_img {
+    height: 240px;
+    width: 350px;
+  }
+  /* line 158, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .review .review_descr {
+    color: #fff;
+  }
+  /* line 161, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  footer .footer_wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 168, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  footer .footer_wrapper .footer_three_block {
+    order: 2;
+    margin: 0 auto;
+    width: auto;
+    margin-top: 10px;
+  }
+  /* line 173, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  footer .footer_wrapper .footer_one_block {
+    order: -1;
+    width: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 182, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader {
+    height: 60;
+  }
+  /* line 184, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader .subheader_offical {
+    display: none;
+  }
+  /* line 186, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 27px;
+  }
+  /* line 188, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader .xs-visable {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 11px;
+    text-align: center;
+  }
+  /* line 195, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .subheader .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+    margin-top: 9px;
+  }
+  /* line 201, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .promo {
+    min-height: 400px;
+    padding: 120px 0 35px 0;
+  }
+  /* line 204, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .promo_descr {
+    display: none;
+  }
+  /* line 206, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .promo .promo_header {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  /* line 210, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .promo .promo_subheader {
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+  }
+  /* line 215, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .promo .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+  }
+  /* line 219, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  /* line 221, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .menu .menu_item {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 224, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .menu .menu_item .menu_link {
+    display: block;
+  }
+  /* line 227, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .reasons {
+    padding: 22px 0 36px 0;
+  }
+  /* line 229, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .reasons .reasons_block {
+    margin-top: 26px;
+  }
+  /* line 231, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .reasons .reasons_round {
+    width: 100px;
+    height: 100px;
+  }
+  /* line 234, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  .reasons .reasons_descr {
+    width: 100%;
+    margin-top: 27px;
+    font-size: 16px;
+  }
+  /* line 239, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  /* line 243, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .review {
+    background: #070716;
+    min-height: 393px;
+  }
+  /* line 246, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .review .review_img {
+    height: 190px;
+    width: 300px;
+  }
+  /* line 249, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body .review .review_descr {
+    color: #fff;
+  }
+  /* line 252, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body footer .footer_wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* line 259, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body footer .footer_wrapper .footer_three_block {
+    order: 2;
+    margin: 0 auto;
+    width: auto;
+    margin-top: 10px;
+  }
+  /* line 264, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body footer .footer_wrapper .footer_one_block {
+    order: -1;
+    margin-left: -7px;
+    width: auto;
+  }
+  /* line 268, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body footer .footer_links {
+    width: 290px;
+  }
+  /* line 270, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body footer .footer_links .footer_main_links {
+    padding: 0;
+  }
+  /* line 272, D:/Учеба/работа/beonmax/uber_project/src/sass/_media.sass */
+  body footer .footer_links .footer_main_links a {
+    font-size: 14px;
+  }
+}
+
+/* menu */
+/* line 6, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 4, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 10, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 10, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+nav {
+  position: fixed;
+  height: 50px;
+  background-color: #212121;
+  z-index: 2;
+  width: 100%;
+}
+
+/* line 17, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 19, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+header nav {
+  padding: 13px 70px;
+  margin: 0;
+}
+
+/* line 21, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 25, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+/* line 31, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.menu_link {
+  font-weight: 300;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 37, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+/* line 40, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 26, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 32, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 36, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 49, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  width: 100%;
+  height: 87px;
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: 50px;
+}
+
+/* line 56, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.subheader .subheader_logo {
+  display: block;
+  min-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 62, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.subheader_offical {
+  font-weight: 300;
+  font-size: 13px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin-top: 6px;
+}
+
+/* line 69, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.subheader .subheder_call {
+  text-align: center;
+  margin-top: 19px;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+/* line 77, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.subheader_phone {
+  text-align: center;
+  display: block;
+  font-weight: 300;
+  font-size: 22px;
+  text-align: right;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+/* line 87, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.subheader_btn {
+  width: 172px;
+  height: 46px;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  margin-top: 19px;
+}
+
+/* line 2, D:/Учеба/работа/beonmax/uber_project/src/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background: #1eacc7;
+}
+
+/* line 43, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 48, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 55, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 63, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 73, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* menu */
+/* promo */
+/* line 91, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 117, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/twoSection/uber_bg.png") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 123, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.promo_header {
+  font-size: 60px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin: 0;
+}
+
+/* line 132, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.promo_subheader {
+  font-size: 60px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin: 0;
+  font-size: 35px;
+  line-height: 36px;
+  margin-top: 22px;
+}
+
+/* line 144, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.promo .promo_descr {
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 24px;
+  margin-top: 23px;
+}
+
+/* line 152, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+/* line 2, D:/Учеба/работа/beonmax/uber_project/src/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background: #1eacc7;
+}
+
+/* line 96, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 105, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 117, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 124, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* conditions */
+/* line 139, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass */
+/* line 180, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.label {
+  width: 115px;
+  height: 27px;
+  background: #000000;
+  margin: 0 auto;
+  color: #FFF;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 12px;
+}
+
+/* line 191, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.title {
+  font-weight: 900;
+  font-size: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 20px;
+}
+
+/* line 199, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.subtitle {
+  font-size: 17px;
+  text-align: center;
+  color: #222222;
+  margin-top: 19px;
+}
+
+/* line 206, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+  overflow-x: hidden;
+}
+
+/* line 211, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 217, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+/* line 228, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.reasons_descr {
+  width: 343px;
+}
+
+/* line 231, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 237, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.reasons_subtitle {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 244, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile {
+  overflow-x: hidden;
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/fourSection/mobile_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 250, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .row {
+  margin-top: 32px;
+}
+
+/* line 252, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+/* line 259, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .mobile_item_1 {
+  background: url("../img/fourSection/mobile_screen_1.png") center center/cover no-repeat;
+}
+
+/* line 261, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .mobile_item_2 {
+  background: url("../img/fourSection/mobile_screen_2.png") center center/cover no-repeat;
+}
+
+/* line 263, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .mobile_item_3 {
+  background: url("../img/fourSection/mobile_screen_3.png") center center/cover no-repeat;
+}
+
+/* line 265, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .mobile_item_4 {
+  background: url("../img/fourSection/mobile_screen_4.png") center center/cover no-repeat;
+}
+
+/* line 267, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .mobile_item_5 {
+  background: url("../img/fourSection/mobile_screen_5.png") center center/cover no-repeat;
+}
+
+/* line 269, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .mobile_item_6 {
+  background: url("../img/fourSection/mobile_screen_6.png") center center/cover no-repeat;
+}
+
+/* line 271, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .mobile_item_subtitle {
+  line-height: 31px;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* line 277, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  background: #000000;
+  border-radius: 100%;
+  padding: 6px;
+  margin: 0 auto;
+  bottom: 35px;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+
+/* line 293, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .mobile_item_plus::before {
+  content: ' ';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background: #1eacc7;
+  transition: 0.5s all;
+}
+
+/* line 301, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .mobile_item_plus::after {
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 14px;
+  width: 2px;
+  background: #1eacc7;
+  transition: 0.5s all;
+}
+
+/* line 312, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.mobile .mobile_item_plus:hover::before, .mobile .mobile_item_plus:hover::after {
+  background: #ff5656;
+}
+
+/* line 319, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.review {
+  overflow-x: hidden;
+  min-height: 864px;
+  background: linear-gradient(to bottom, #070716 50%, #fff 50%);
+  padding: 48px;
+}
+
+/* line 325, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.review .label {
+  background: #fff;
+  color: #070716;
+}
+
+/* line 328, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.review .title, .review .subtitle {
+  color: #fff;
+}
+
+/* line 330, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.review img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+/* line 334, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.review .review_descr {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #222222;
+}
+
+/* line 344, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.require {
+  min-height: 764px;
+  padding: 68px 0 84px 0;
+  overflow-x: hidden;
+}
+
+/* line 348, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.require .require_wrapper {
+  margin: 33px 0;
+}
+
+/* line 350, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.require .require_wrapper .require_nmb {
+  margin-bottom: 0px;
+}
+
+/* line 353, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.require .require_wrapper .require_title {
+  font-size: 22px;
+  color: #1ca8c3;
+}
+
+/* line 356, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.require .require_wrapper .require_list {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+/* line 360, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.require .require_wrapper .require_list li {
+  position: relative;
+  font-weight: 300;
+  font-size: 17px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+/* line 366, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.require .require_wrapper .require_list li::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: -40px;
+  top: 3px;
+  height: 26px;
+  width: 26px;
+  background: url("../img/sixSection/Rectangle.svg") center center/cover no-repeat;
+}
+
+/* line 375, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.require .require_descr {
+  font-weight: 300;
+  font-size: 17px;
+  color: #1CA8C3;
+}
+
+/* line 379, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.require .warning {
+  margin-bottom: 0;
+}
+
+/* line 381, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+/* line 385, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.require .warning .require_list li::before {
+  background: url("../img/sixSection/red_check.png") center center/cover no-repeat;
+}
+
+/* line 388, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.world {
+  overflow-x: hidden;
+  padding: 33px 0;
+  background: url("../img/sevenSection/world_bg.jpg") center center/cover no-repeat;
+  height: 720px;
+}
+
+/* line 393, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.world .label {
+  background: #fff;
+  color: #070716;
+}
+
+/* line 396, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.world .title, .world .subtitle {
+  color: #fff;
+}
+
+/* line 399, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.world .world_view {
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1FBAD6;
+  margin-top: 450px;
+  text-decoration: none;
+}
+
+/* line 412, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+footer {
+  overflow-x: hidden;
+  padding: 23px 39px;
+}
+
+/* line 415, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+footer a {
+  text-decoration: none;
+}
+
+/* line 418, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 421, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.diveder {
+  margin: 0 auto;
+  width: 301px;
+  height: 7px;
+  background: #1FBAD6;
+}
+
+/* line 428, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+/* line 433, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.footer_wrapper .footer_wrapper_icon {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+}
+
+/* line 437, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.footer_wrapper .footer_wrapper_icon .foooter_social_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background: #000;
+  border-radius: 100%;
+  color: white;
+}
+
+/* line 448, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.footer_wrapper .footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 451, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.footer_wrapper .footer_links .footer_main_links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 455, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.footer_wrapper .footer_links .footer_main_links a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #070716;
+  font-weight: 300;
+}
+
+/* line 460, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.footer_wrapper .footer_links .footer_sub_links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 464, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.footer_wrapper .footer_links .footer_sub_links a {
+  font-weight: 300;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+/* line 469, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.footer_wrapper .footer_links .footer_lang {
+  display: block;
+  margin: 0 auto;
+  color: #1fbad6;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 478, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.footer_wrapper .footer_wrapper_img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 482, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.footer_wrapper .footer_wrapper_img a {
+  display: block;
+  padding: 0 10px;
+}
+
+/* line 486, D:/Учеба/работа/beonmax/uber_project/src/sass/_general.sass */
+.xs-visable {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

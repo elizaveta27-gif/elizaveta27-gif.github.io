@@ -1,0 +1,487 @@
+/* menu
+/* line 6, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+ 
+header
+  position: relative
+  height: 50px   
+
+/* line 10, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+nav
+  position: fixed
+  height: 50px
+  background-color: #212121
+  z-index: 2
+  width: 100%
+
+/* line 17, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+header nav
+  padding: 13px 70px
+  margin: 0
+
+/* line 21, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+.menu
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  list-style-type: none
+
+  &_link
+    font-weight: 300 
+    font-size: 15px
+    color: #FFFFFF
+    text-decoration: none 
+ 
+  &_item
+    border-right: 2px dotted black
+    padding-right: 28px
+    &:last-child
+      border-right: none
+
+/* line 26, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+/* line 32, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+/* line 36, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+.subheader
+  position: absolute
+  width: 100%
+  height: 87px
+  background: rgba(0, 0, 0, 0.6)
+  margin-top: 50px 
+
+  .subheader_logo
+    display: block
+     
+    min-width: 100%
+    margin-top: 16px
+
+  &_offical
+    font-weight: 300
+    font-size: 13px
+    color: #FFFFFF
+    opacity: 0.5
+    margin-top: 6px
+
+  .subheder_call
+    text-align: center
+    margin-top: 19px
+    font-weight: 300
+    font-size: 12px
+    text-align: right
+    color: #FFFFFF
+
+  &_phone 
+    text-align: center
+    display: block
+    font-weight: 300
+    font-size: 22px
+    text-align: right
+    color: #FFFFFF 
+    text-transform: uppercase
+    line-height: 24px
+ 
+  &_btn
+    width: 172px
+    height: 46px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    text-align: center
+    font-family: Roboto
+    font-size: 14px
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    margin-top: 19px
+    @include btn_hover
+    
+
+/* line 43, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+/* line 48, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+/* line 55, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+/* line 63, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+/* line 73, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+/* menu
+/* promo
+/* line 91, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+.promo
+  min-height: 800px
+  background: url("../img/twoSection/uber_bg.png") center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+  
+
+  &_header
+    font-size: 60px
+    text-align: center
+    color: #FFFFFF
+    font-weight: 900
+    text-transform: uppercase
+    line-height: 60px
+    margin: 0
+
+  &_subheader
+    font-size: 60px
+    text-align: center
+    color: #FFFFFF
+    font-weight: 900
+    text-transform: uppercase
+    line-height: 60px
+    margin: 0
+    font-size: 35px
+    line-height: 36px
+    margin-top: 22px
+
+  .promo_descr
+    font-size: 18px
+    text-align: center
+    color: #FFFFFF
+    line-height: 24px
+    margin-top: 23px
+  
+
+  &_btn
+    display: block
+    margin: 118px auto 0 auto
+    width: 259px
+    height: 63px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    font-size: 18px
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    @include btn_hover
+    
+    
+
+
+/* line 96, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+/* line 105, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+/* line 117, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+/* line 124, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+/* conditions
+/* line 139, D:/Учеба/работа/beonmax/uber_project/src/sass/style.sass
+
+.label 
+	width: 115px
+	height: 27px
+	background: #000000
+	margin: 0 auto
+	color: #FFF
+	font-size: 11px
+	text-transform: uppercase
+	text-align: center
+	padding: 5px 12px
+
+.title
+	font-weight: 900
+	font-size: 38px
+	text-align: center
+	text-transform: uppercase
+	color: #222222
+	margin-top: 20px
+
+.subtitle
+	font-size: 17px
+	text-align: center
+	color: #222222
+	margin-top: 19px
+
+
+.reasons
+  padding: 71px 0 65px 0
+  overflow-x: hidden
+
+
+  &_block
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+  &_round 
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: #1eacc7
+    border-radius: 100%
+ 
+  &_descr
+    width: 343px
+
+  &_text
+    color: #202020
+    font-size: 15px
+    font-weight: 300
+    line-height: 21px
+
+  &_subtitle
+    line-height: 21px
+    color: #1eacc7
+    font-size: 17px
+    font-weight: 400
+
+
+.mobile
+ overflow-x: hidden
+	min-height: 864px
+	padding: 48px 0 79px 0
+	background: url('../img/fourSection/mobile_bg.jpg') center (center / cover) no-repeat
+   
+	.row
+		margin-top: 32px
+	.mobile_item
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-bottom: 19px
+		padding-top: 92px
+	.mobile_item_1
+		background:url('../img/fourSection/mobile_screen_1.png') center (center/cover) no-repeat
+	.mobile_item_2
+		background:url('../img/fourSection/mobile_screen_2.png') center (center/cover) no-repeat
+	.mobile_item_3
+		background:url('../img/fourSection/mobile_screen_3.png') center (center/cover) no-repeat
+	.mobile_item_4
+		background:url('../img/fourSection/mobile_screen_4.png') center (center/cover) no-repeat		
+	.mobile_item_5
+		background:url('../img/fourSection/mobile_screen_5.png') center (center/cover) no-repeat
+	.mobile_item_6
+		background:url('../img/fourSection/mobile_screen_6.png') center (center/cover) no-repeat	
+	.mobile_item_subtitle
+		line-height: 31px
+		font-size: 24px
+		text-align: center
+		text-transform: uppercase
+		color: #FFFFFF
+	.mobile_item_plus	
+		display: flex	
+
+		justify-content: center
+		align-items: center
+		position: absolute
+		width: 29px
+		height: 29px
+		background: #000000
+		border-radius: 100%
+		padding: 6px
+		margin: 0 auto
+		bottom: 35px
+		left: 50%
+		transform: translate(-50%)
+		cursor: pointer
+  &::before
+    content: ' '
+    display: block
+    width: 14px   
+    height: 2px
+    background: $main_color
+    transition: 0.5s all 
+    
+  &::after
+    content: ' '
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    display: block
+    height: 14px
+    width: 2px
+    background: $main_color
+    transition: 0.5s all 
+  &:hover
+    &::before, &::after
+      background: $second-color
+      
+
+        
+		
+
+.review
+ overflow-x: hidden 
+	min-height: 864px
+	background: linear-gradient(to bottom , #070716 50%,  #fff 50%);
+	padding: 48px
+  
+	.label
+		background: #fff
+		color: #070716
+	.title, .subtitle	
+		color: #fff
+	img 
+		display: block
+		margin: 0 auto 
+		margin-top: 25px 
+	.review_descr
+		font-weight: 300
+		font-size: 17px
+		line-height: 24px
+		text-align: center
+		color: #222222
+	
+
+
+
+.require
+  min-height: 764px 
+  padding: 68px 0 84px 0
+  overflow-x: hidden
+  .require_wrapper
+    margin: 33px 0 
+    .require_nmb
+      margin-bottom: 0px
+      
+    .require_title
+      font-size: 22px
+      color: #1ca8c3
+    .require_list
+      list-style-type: none
+      // padding-left: 45px
+      margin-top: 15px
+      li
+        position: relative
+        font-weight: 300
+        font-size: 17px
+        color: #222222
+        margin-bottom: 15px 
+        &::before
+          content: ' '
+          display: block
+          position: absolute
+          left: -40px
+          top: 3px
+          height: 26px
+          width: 26px
+          background: url('../img/sixSection/Rectangle.svg') center center/cover no-repeat
+  .require_descr
+    font-weight: 300
+    font-size: 17px
+    color: #1CA8C3
+  .warning
+    margin-bottom: 0
+    .require_title
+      color: $second-color
+    .require_list
+      li
+        &::before
+          background: url('../img/sixSection/red_check.png') center center/cover no-repeat
+
+.world
+  overflow-x: hidden
+  padding: 33px 0
+  background: url('../img/sevenSection/world_bg.jpg') center center/cover no-repeat
+  height: 720px
+  .label
+    background: #fff
+    color: #070716
+  .title, .subtitle	
+    color: #fff
+
+  .world_view
+    display: block
+    font-size: 15px
+    text-align: center
+    text-transform: uppercase
+    color: #1FBAD6
+    margin-top: 450px
+    text-decoration: none
+
+
+
+
+
+footer
+  overflow-x: hidden
+  padding: 23px 39px
+  a 
+    text-decoration: none
+
+.footer_wrapper>div 
+  width: 33%
+
+.diveder
+  margin: 0 auto
+  width: 301px
+  height: 7px
+  background: #1FBAD6
+  
+
+.footer_wrapper
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  padding-top: 32px
+  .footer_wrapper_icon
+     display: flex
+     justify-content: space-between
+     width: 160px 
+     .foooter_social_icons
+      
+      display: flex 
+      justify-content: center
+      align-items: center
+      height: 32px
+      width: 32px
+      background: #000 
+      border-radius:  100% 
+      color: white
+      
+  .footer_links
+    width: 390px
+    margin: 0 auto
+    .footer_main_links
+      display: flex
+      justify-content: space-between
+      padding: 0 10px 
+      a
+        font-size: 15px
+        text-transform: uppercase 
+        color: #070716
+        font-weight: 300
+    .footer_sub_links
+      display: flex
+      justify-content: space-between
+      margin-top: 10px
+      a
+        font-weight: 300
+        font-size: 11px
+        text-transform: uppercase
+        color: #999999
+    .footer_lang
+      display: block 
+      margin: 0 auto
+      color: #1fbad6
+      font-size: 11px
+      font-weight: 400
+      margin-top: 19px
+      text-transform: uppercase
+      text-align: center
+  .footer_wrapper_img
+    display: flex
+    justify-content: flex-end
+    
+    a
+      display: block
+      padding: 0 10px
+
+.xs-visable
+  display: none
